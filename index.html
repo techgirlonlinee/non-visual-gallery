@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Non-visual Gallery</title>
+</head>
+
+<body>
+    <!-- Filters -->
+    <div class="row justify-content-left">
+        <div class="col-md-12 col-sm-12">
+            <div class="filter-group">
+                <div class="month-filter">
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="all" checked>
+                        <span>All</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="0">
+                        <span>Jan</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="1">
+                        <span>Feb</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="2">
+                        <span>Mar</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="3">
+                        <span>Apr</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="4">
+                        <span>May</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="5">
+                        <span>Jun</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="6">
+                        <span>Jul</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="7">
+                        <span>Aug</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="8">
+                        <span>Sep</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="9">
+                        <span>Oct</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="10">
+                        <span>Nov</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="month" value="11">
+                        <span>Dec</span>
+                    </label>
+                    <!-- Add other months similarly -->
+                </div>
+
+                <div class="time-of-day-filter">
+                    <label class="btn-style">
+                        <input type="radio" name="timeOfDay" value="all" checked>
+                        <span>All</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="timeOfDay" value="morning">
+                        <span>AM</span>
+                    </label>
+                    <label class="btn-style">
+                        <input type="radio" name="timeOfDay" value="night">
+                        <span>PM</span>
+                    </label>
+                    <!-- Add other times similarly -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="wrapper">
+            <div class="container-fluid mt-5">
+                <!-- Content -->
+                <div class="row mt-4" id="content">
+                    <!-- Cards will be added here via JavaScript -->
+                </div>
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
