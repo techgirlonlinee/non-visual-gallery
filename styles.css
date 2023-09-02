@@ -17,6 +17,8 @@
 }
 
 .card {
+    width: calc(100vw / 6 - 16px);
+    height: calc(100vw / 6 - 16px);
     min-width: 150px;
     padding: 12px;
     border-radius: 0;
@@ -24,18 +26,17 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.3s ease; /* Default transition */
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-    /* background-color: rgb(228, 228, 228); */
     transform: scale(1.18);
-    z-index: 1; /* This ensures the hovered card is above the others */
-    transition: transform 0.3s ease; /* This makes the scaling transition smooth */
+    z-index: 1;
+    transition: transform 0.3s ease;
 }
 
 p {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
 }
 
 .date-wrapper {
@@ -57,11 +58,11 @@ p {
     font-size: 1rem;
     padding-top: 4px;
     margin-left: -1px;
-    color: #666; /* Default text color */
+    color: #666;
 }
 
 .btn-style:hover {
-    color: #131313; /* Hover text color */
+    color: #131313;
 }
 
 .btn-style input[type="radio"] {
@@ -69,7 +70,7 @@ p {
 }
 
 .btn-style input[type="radio"]:checked + span {
-    font-weight: bold; /* Selected filter text becomes bold */
+    font-weight: bold;
     color: #131313;
     text-decoration: underline;
 }
@@ -112,14 +113,12 @@ p {
     .btn-style {
         width: 14px;
         margin-bottom: 9px;
-        margin-right: 36px
+        margin-right: 36px;
     }
 
     .card {
-        width: calc(100vw - 48px);
-        height: calc(100vw - 48px);
-        position: relative;
-        justify-content: flex-start;
+        width: calc(100vw - 24px);
+        height: calc(100vw - 24px);
     }
 
     p {
@@ -127,42 +126,66 @@ p {
     }
 
     .month-filter, .time-of-day-filter {
-    margin-left: -16px;
+        margin-left: -16px;
     }
 }
 
-@media (min-width: 576px) and (max-width: 776px) {
+@media (min-width: 576px) and (max-width: 900px) {
     .col-12, .col-md-4, .col-lg-2, .col-xl-5, .col-xxl-4 {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
+    .card {
+        width: calc(100vw / 2 - 16px);
+        height: calc(100vw / 2 - 16px);
+    }
 }
 
-@media (min-width: 777px) and (max-width: 1135px) {
+@media (min-width: 901px) and (max-width: 1180px) {
     .col-12, .col-md-4, .col-lg-2, .col-xl-5, .col-xxl-4 {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
+
+    .card {
+        width: calc(100vw / 3 - 16px);
+        height: calc(100vw / 3 - 16px);
+    }
 }
 
-@media (min-width: 1136px) and (max-width: 1299px) {
+@media (min-width: 1180px) and (max-width: 1440px) {
     .col-12, .col-md-4, .col-lg-2, .col-xl-5, .col-xxl-4 {
         flex: 0 0 25%;
         max-width: 25%;
     }
+
+    .card {
+        width: calc(100vw / 4 - 16px);
+        height: calc(100vw / 4 - 16px);
+    }
 }
 
-@media (min-width: 1300px) and (max-width: 1700px) {
+@media (min-width: 1440px) and (max-width: 1680px) {
     .col-12, .col-md-4, .col-lg-2, .col-xl-5, .col-xxl-4 {
         flex: 0 0 20%;
         max-width: 20%;
     }
-}
 
-@media (min-width: 1720px) {
-    .col-12, .col-md-4, .col-lg-2, .col-xl-5, .col-xxl-4 {
-        flex: 0 0 14.28%; /* 100 divided by 7 */
-        max-width: 14.28%;
+    .card {
+        width: calc(100vw / 5 - 16px);
+        height: calc(100vw / 5 - 16px);
     }
 }
 
+@media (min-width: 2001px) {
+    .col-12, .col-md-4, .col-lg-2, .col-xl-5, .col-xxl-4 {
+        flex: 0 0 14.28%;
+        max-width: 14.28%;
+    }
+
+    .card {
+        width: calc(100vw / 7 - 16px);
+        height: calc(100vw / 7 - 16px);
+    }
+}
