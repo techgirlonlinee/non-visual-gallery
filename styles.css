@@ -39,8 +39,7 @@ p {
     margin-bottom: 0rem;
 }
 
-.description p {
-    font-size: 16px;
+.description {
     margin-left: 28px !important ;
     margin-top: 2rem !important ;
     color: grey !important ;
