@@ -140,7 +140,7 @@ p {
         /* margin-left: 16px !important ; */
         margin-top: 2rem !important ;
         color: grey !important ;
-        margin-left: 6px;
+        margin-left: 6px !important ;
     }
 }
 
