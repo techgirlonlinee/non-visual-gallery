@@ -71,8 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const dateTime = new Date(dateTimeString);
         const day = dateTime.getDate();
         const month = dateTime.getMonth();
-        const hours = dateTime.getUTCHours();
-        const minutes = String(dateTime.getUTCMinutes()).padStart(2, '0');
+        const hours = dateTime.getHours();
+        const minutes = String(dateTime.getMinutes()).padStart(2, '0');        
 
         const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const monthName = monthNames[month];

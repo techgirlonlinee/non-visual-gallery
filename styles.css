@@ -39,6 +39,13 @@ p {
     margin-bottom: 0rem;
 }
 
+.description p {
+    font-size: 16px;
+    margin-left: 28px;
+    margin-top: 2rem;
+    color: grey;
+}
+
 .date-wrapper {
     display: flex;
     flex-direction: column;
