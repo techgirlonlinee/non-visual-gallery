@@ -138,9 +138,10 @@ p {
 
     .description {
         /* margin-left: 16px !important ; */
-        margin-top: 2rem !important ;
-        color: grey !important ;
-        margin-left: 6px !important ;
+        margin-top: 2rem !important;
+        color: grey !important;
+        margin-left: 6px !important;
+        padding-right: 24px;
     }
 }
 
