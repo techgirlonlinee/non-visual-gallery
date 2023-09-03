@@ -40,9 +40,10 @@ p {
 }
 
 .description {
-    margin-left: 28px !important ;
+    /* margin-left: 28px !important ; */
     margin-top: 2rem !important ;
     color: grey !important ;
+    margin-left: 14px;
 }
 
 .date-wrapper {
@@ -133,6 +134,13 @@ p {
 
     .month-filter, .time-of-day-filter {
         margin-left: -16px;
+    }
+
+    .description {
+        /* margin-left: 16px !important ; */
+        margin-top: 2rem !important ;
+        color: grey !important ;
+        margin-left: 6px;
     }
 }
 
